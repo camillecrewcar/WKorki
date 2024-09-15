@@ -13,12 +13,12 @@ import MenuItem from '@mui/material/MenuItem';
 import '@fontsource/red-hat-display'; 
 
 
-import Logo from '../res/logo.png';
+import Logo from '../../res/logo.png';
 
 
 const pages = ['Jak to działa?', 'Ceny', 'Przedmioty', 'Kontkat'];
 
-function ResponsiveAppBar( ) {
+function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -30,7 +30,7 @@ function ResponsiveAppBar( ) {
 
 
   return (
-    <AppBar position="static"  sx={{ backgroundColor: '#E49378' }}>
+    <AppBar position="sticky"  sx={{ backgroundColor: '#E49378' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
         <img
