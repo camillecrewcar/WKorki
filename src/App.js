@@ -8,9 +8,10 @@ import { Container } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
 import Grid from '@mui/material/Grid2';
-
-
-
+import CalculateRoundedIcon from '@mui/icons-material/CalculateRounded';
+import ScienceIcon from '@mui/icons-material/Science';
+import TranslateIcon from '@mui/icons-material/Translate';
+import ComputerRoundedIcon from '@mui/icons-material/ComputerRounded';
 export default function App() {
   let theme = createTheme({
     typography: {
@@ -50,17 +51,18 @@ export default function App() {
           >
             Przedmioty których uczymy:
           </Typography>
-          <Grid container spacing={2}>
-            <Grid size={2}>
-              <Subject>
-
-              </Subject>
+          <Grid container spacing={4} sx={{ display: 'flex', justifyContent: 'center' }} > 
+            <Grid item xs={12} sm={6} md={3} sx={{ display: 'flex', justifyContent: 'center' }}>
+              <Subject icon={CalculateRoundedIcon} subject="Matematyka" />
             </Grid>
-            <Grid size={4}>
+            <Grid item xs={12} sm={6} md={3} sx={{ display: 'flex', justifyContent: 'center' }}>
+              <Subject icon={ScienceIcon} subject="Chemia" />
             </Grid>
-            <Grid size={4}>
+            <Grid item xs={12} sm={6} md={3} sx={{ display: 'flex', justifyContent: 'center' }}>
+              <Subject icon={TranslateIcon} subject="Angielski" />
             </Grid>
-            <Grid size={8}>
+            <Grid item xs={12} sm={6} md={3} sx={{ display: 'flex', justifyContent: 'center' }}>
+              <Subject icon={ComputerRoundedIcon} subject="Informatyka" />
             </Grid>
           </Grid>
         </Container>
