@@ -6,7 +6,23 @@ body {
   font-optical-sizing: auto;
   margin: 0px;
 }
+.footer {
+  padding: 3rem;
+  color: white;
 
+}
+.footer ul {
+  padding-inline-start: 0px;
+  font-size: large;
+}
+.MuiLink-root {
+  cursor: pointer;
+  color: white;
+
+}
+.MuiLink-root:hover {
+  color: #b27167;
+}
 .code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
