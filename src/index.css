@@ -4,6 +4,7 @@
 body {
   font-family: "Red Hat Display", sans-serif;
   font-optical-sizing: auto;
+  margin: 0px;
 }
 
 .code {

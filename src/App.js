@@ -12,6 +12,7 @@ import CalculateRoundedIcon from '@mui/icons-material/CalculateRounded';
 import ScienceIcon from '@mui/icons-material/Science';
 import TranslateIcon from '@mui/icons-material/Translate';
 import ComputerRoundedIcon from '@mui/icons-material/ComputerRounded';
+import Footer from './components/global/footer';
 export default function App() {
   let theme = createTheme({
     typography: {
@@ -27,7 +28,7 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <div>
         <ResponsiveAppBar />
-        <Container sx={{ display: 'flex', flexDirection: 'column', gap: 6, marginTop: 6 }}>
+        <Container sx={{ display: 'flex', flexDirection: 'column', gap: 6, marginTop: 6, marginBottom: 6 }}>
           <Typography
             variant="h3"
             textAlign="center"
@@ -51,7 +52,7 @@ export default function App() {
           >
             Przedmioty których uczymy:
           </Typography>
-          <Grid container spacing={4} sx={{ display: 'flex', justifyContent: 'center' }} > 
+          <Grid container spacing= {{ xs: 4, md: 10 }} sx={{ display: 'flex', justifyContent: 'center' }} > 
             <Grid item xs={12} sm={6} md={3} sx={{ display: 'flex', justifyContent: 'center' }}>
               <Subject icon={CalculateRoundedIcon} subject="Matematyka" />
             </Grid>
@@ -65,7 +66,11 @@ export default function App() {
               <Subject icon={ComputerRoundedIcon} subject="Informatyka" />
             </Grid>
           </Grid>
+
         </Container>
+        <Footer>
+            
+          </Footer>
       </div>
     </ThemeProvider>
   );
