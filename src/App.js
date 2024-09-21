@@ -10,7 +10,7 @@ import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/s
 import Grid from '@mui/material/Grid2';
 import CalculateRoundedIcon from '@mui/icons-material/CalculateRounded';
 import ScienceIcon from '@mui/icons-material/Science';
-import TranslateIcon from '@mui/icons-material/Translate';
+import TranslateIcon from '@mui/icons-material/TranslateRounded';
 import ComputerRoundedIcon from '@mui/icons-material/ComputerRounded';
 import Footer from './components/global/footer';
 export default function App() {
