@@ -18,6 +18,9 @@ function Footer() {
   const isMobile = useMediaQuery('(max-width:600px)');
   const [openParent, setOpenParent] = React.useState(false);
   const [openStudent, setOpenStudent] = React.useState(false);
+  const [openContact, setopenContact] = React.useState(false);
+  const [openSocials, setopenSocials] = React.useState(false);
+
 
   const handleParentClick = () => {
     setOpenParent(!openParent);
@@ -25,6 +28,12 @@ function Footer() {
 
   const handleStudentClick = () => {
     setOpenStudent(!openStudent);
+  };
+  const handleContactClick = () => {
+    setopenContact(!openContact);
+  };
+  const handleSocialsClick = () => {
+    setopenSocials(!openSocials);
   };
   return (
     <Box className="footer" sx={{ backgroundColor: '#E49378', borderTopLeftRadius: 10, borderTopRightRadius: 10, padding: 2 }}>
@@ -142,6 +151,101 @@ function Footer() {
                   <FiberManualRecordIcon sx={{fontSize: 'small'}} />
                 </ListItemIcon>
                 <ListItemText primary="Co wyniesiesz z lekcji" />
+              </ListItemButton>
+              </Link>
+            </List>
+          </Collapse>
+        </List>
+        <List
+          sx={{ width: '100%', display: { sx: 'block', sm: 'none'} }}
+          component="nav"
+          aria-labelledby="nested-list-subheader"
+        >
+          <ListItemButton onClick={handleContactClick}>
+            <ListItemIcon>
+              <PetsIcon></PetsIcon>
+            </ListItemIcon>
+            <ListItemText primary="Kontakt" />
+            {openContact ? <ExpandLess /> : <ExpandMore />}
+          </ListItemButton>
+          <Collapse in={openContact} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+            <Link underline="hover" color="inherit">
+              <ListItemButton sx={{ pl: 4 }}>
+              
+                <ListItemIcon>
+                  <FiberManualRecordIcon sx={{fontSize: 'small'}} />
+                </ListItemIcon>
+                <ListItemText>Email: <Link underline="hover" color="inherit">wkorki@wp.pl</Link></ListItemText>
+              </ListItemButton>
+              </Link>
+              <Link underline="hover" color="inherit">
+              <ListItemButton sx={{ pl: 4 }}>
+              
+                <ListItemIcon>
+                  <FiberManualRecordIcon sx={{fontSize: 'small'}} />
+                </ListItemIcon>
+                <ListItemText >Telefon: <Link underline="hover" color="inherit">+48 530 552 656</Link>
+                </ListItemText>
+              </ListItemButton>
+              </Link>
+            </List>
+          </Collapse>
+        </List>
+        <List
+          sx={{ width: '100%', display: { sx: 'block', sm: 'none'} }}
+          component="nav"
+          aria-labelledby="nested-list-subheader"
+        >
+          <ListItemButton onClick={handleSocialsClick}>
+            <ListItemIcon>
+              <PetsIcon></PetsIcon>
+            </ListItemIcon>
+            <ListItemText primary="Zaglądnij też tu" />
+            {openSocials ? <ExpandLess /> : <ExpandMore />}
+          </ListItemButton>
+          <Collapse in={openSocials} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+            <Link underline="hover" color="inherit">
+              <ListItemButton sx={{ pl: 4 }}>
+              
+                <ListItemIcon>
+                  <FiberManualRecordIcon sx={{fontSize: 'small'}} />
+                </ListItemIcon>
+                <ListItemText>
+                <Link href="https://www.facebook.com/profile.php?id=61562963636507" target="_blank" sx={{ display: 'flex', alignItems: 'center' }} underline="hover" color="inherit">
+                  <FacebookIcon fontSize="large" /> W Korki
+                </Link>
+
+                </ListItemText>
+              </ListItemButton>
+              </Link>
+              <Link underline="hover" color="inherit">
+              <ListItemButton sx={{ pl: 4 }}>
+              
+                <ListItemIcon>
+                  <FiberManualRecordIcon sx={{fontSize: 'small'}} />
+                </ListItemIcon>
+                <ListItemText >
+                <Link href="https://www.instagram.com/wkorki/" target="_blank" sx={{ display: 'flex', alignItems: 'center' }} underline="hover" color="inherit">
+                  <InstagramIcon fontSize="large" /> @wkorki
+                </Link>
+
+                </ListItemText>
+              </ListItemButton>
+              </Link>
+              <Link underline="hover" color="inherit">
+              <ListItemButton sx={{ pl: 4 }}>
+              
+                <ListItemIcon>
+                  <FiberManualRecordIcon sx={{fontSize: 'small'}} />
+                </ListItemIcon>
+                <ListItemText >
+                <Link href="https://www.tiktok.com/@wkorki" target="_blank" sx={{ display: 'flex', alignItems: 'center' }} underline="hover" color="inherit">
+                  <MusicNoteIcon fontSize="large" /> wkorki
+                </Link>
+
+                </ListItemText>
               </ListItemButton>
               </Link>
             </List>
