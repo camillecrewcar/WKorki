@@ -37,7 +37,7 @@ export default function App() {
           <Container sx={{ display: 'flex', flexDirection: 'column', gap: 6, marginTop: 6, marginBottom: 6 }}>
             <Routes>
               <Route
-                path="/"
+                path="/WKorki"
                 element={
                   <>
                     <Typography
