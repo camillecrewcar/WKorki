@@ -39,7 +39,7 @@ function Footer() {
     <Box className="footer" sx={{ backgroundColor: '#E49378', borderTopLeftRadius: 10, borderTopRightRadius: 10, padding: 2 }}>
       <Grid container sx={{ display: 'flex', justifyContent: 'center'}}>
         <Grid item size={{lg: 3, sm: 5}} sx={{ display: { xs: 'none', sm: 'flex'}, alignItems: 'center', flexDirection: 'column'}}>
-          <h1>Dla rodzica:</h1>
+          <h3>Dla rodzica:</h3>
           <ul style={{ listStyleType: isMobile ? 'none' : 'disc', padding: 0 }}>
             <li>
               <Link underline="hover" color="inherit">Dysfunkcje</Link>
@@ -110,7 +110,7 @@ function Footer() {
         </List>
 
         <Grid item size={{lg: 3, sm: 5}}  sx={{ display: { xs: 'none', sm: 'flex'}, alignItems: 'center', flexDirection: 'column'}}>
-          <h1>Dla ucznia:</h1>
+          <h3>Dla ucznia:</h3>
           <ul style={{ listStyleType: isMobile ? 'none' : 'disc', padding: 0 }}>
             <li>
               <Link underline="hover" color="inherit">Jak wygląda lekcja</Link>
@@ -201,7 +201,7 @@ function Footer() {
             <ListItemIcon>
               <PetsIcon></PetsIcon>
             </ListItemIcon>
-            <ListItemText primary="Zaglądnij też tu" />
+            <ListItemText primary="Sprawdź też to:" />
             {openSocials ? <ExpandLess /> : <ExpandMore />}
           </ListItemButton>
           <Collapse in={openSocials} timeout="auto" unmountOnExit>
@@ -253,7 +253,7 @@ function Footer() {
         </List>
 
         <Grid item size={{lg: 3, sm: 5}}  sx={{ display: { xs: 'none', sm: 'flex'}, alignItems: 'center', flexDirection: 'column'}}>
-          <h1>Kontakt:</h1>
+          <h3>Kontakt:</h3>
           <ul style={{ listStyleType: isMobile ? 'none' : 'disc', padding: 0 }}>
             <li>
               Email: <Link underline="hover" color="inherit">wkorki@wp.pl</Link>
@@ -265,7 +265,7 @@ function Footer() {
         </Grid>
 
         <Grid item size={{lg: 3, sm: 5}}  sx={{ display: { xs: 'none', sm: 'flex'}, alignItems: 'center', flexDirection: 'column'}} >
-          <h1>Zaglądnij też tu:</h1>
+          <h3>Zajrzyj też tu:</h3>
           <Box sx={{ display: 'flex', gap: 2, flexDirection: 'column' }}>
             <Link href="https://www.facebook.com/profile.php?id=61562963636507" target="_blank" sx={{ display: 'flex', alignItems: 'center' }} underline="hover" color="inherit">
               <FacebookIcon fontSize="large" /> W Korki

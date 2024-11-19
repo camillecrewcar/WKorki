@@ -28,7 +28,7 @@ function Subject({ icon: Icon, subject }) {
         }}
       >
         <Icon sx={{ fontSize: 100, color: "primary.main" }} />
-        <h3>{subject}</h3>
+        <h4>{subject}</h4>
       </Paper>
     </ThemeProvider>
   );

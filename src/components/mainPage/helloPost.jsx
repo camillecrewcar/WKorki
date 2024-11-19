@@ -44,16 +44,16 @@ function HelloPost() {
                   }}
                 >
                   <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
-                    <li>
+                    <li  style={{ display: 'flex', alignItems: 'center', gap: 5}}>
                       <CheckCircleIcon sx={{ color: 'white'}} /> Doświadczeni korepetytorzy
                     </li>
-                    <li>
-                      <CheckCircleIcon sx={{ color: 'white' }} /> Natychmiastowa poprawa ocen
+                    <li style={{ display: 'flex', alignItems: 'center', gap: 5}}>
+                      <CheckCircleIcon sx={{ color: 'white' }} /> Poprawa pewności siebie
                     </li>
-                    <li>
+                    <li style={{ display: 'flex', alignItems: 'center', gap: 5}}>
                       <CheckCircleIcon sx={{ color: 'white'}} /> Elastyczne godziny zajęć
                     </li>
-                    <li>
+                    <li style={{ display: 'flex', alignItems: 'center', gap: 5}}>
                       <CheckCircleIcon sx={{ color: 'white'}} /> Darmowa lekcja próbna
                     </li>
                   </ul>
