@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.7250a539.css",
-    "main.js": "/static/js/main.c85cbe8d.js",
-    "static/js/453.5b02ef8d.chunk.js": "/static/js/453.5b02ef8d.chunk.js",
-    "static/media/thumbs_up_girl.png": "/static/media/thumbs_up_girl.ae33028e0649e3feebb3.png",
-    "static/media/happy_girl.png": "/static/media/happy_girl.2f3e69506ad1fb16c8f3.png",
-    "static/media/red-hat-display-latin-400-normal.woff": "/static/media/red-hat-display-latin-400-normal.808d1e08e697913b8f94.woff",
-    "static/media/red-hat-display-latin-400-normal.woff2": "/static/media/red-hat-display-latin-400-normal.a1c6648772d4a0d8b17a.woff2",
-    "static/media/red-hat-display-latin-ext-400-normal.woff": "/static/media/red-hat-display-latin-ext-400-normal.5985b029c7ab7f5838d7.woff",
-    "static/media/red-hat-display-latin-ext-400-normal.woff2": "/static/media/red-hat-display-latin-ext-400-normal.f38d30961842835c5747.woff2",
-    "index.html": "/index.html",
-    "main.7250a539.css.map": "/static/css/main.7250a539.css.map",
-    "main.c85cbe8d.js.map": "/static/js/main.c85cbe8d.js.map",
-    "453.5b02ef8d.chunk.js.map": "/static/js/453.5b02ef8d.chunk.js.map"
+    "main.css": "/WKorki/static/css/main.a8a92832.css",
+    "main.js": "/WKorki/static/js/main.97a0da07.js",
+    "static/js/453.5b02ef8d.chunk.js": "/WKorki/static/js/453.5b02ef8d.chunk.js",
+    "static/media/thumbs_up_girl.png": "/WKorki/static/media/thumbs_up_girl.ae33028e0649e3feebb3.png",
+    "static/media/happy_girl.png": "/WKorki/static/media/happy_girl.2f3e69506ad1fb16c8f3.png",
+    "static/media/red-hat-display-latin-400-normal.woff": "/WKorki/static/media/red-hat-display-latin-400-normal.808d1e08e697913b8f94.woff",
+    "static/media/red-hat-display-latin-400-normal.woff2": "/WKorki/static/media/red-hat-display-latin-400-normal.a1c6648772d4a0d8b17a.woff2",
+    "static/media/red-hat-display-latin-ext-400-normal.woff": "/WKorki/static/media/red-hat-display-latin-ext-400-normal.5985b029c7ab7f5838d7.woff",
+    "static/media/red-hat-display-latin-ext-400-normal.woff2": "/WKorki/static/media/red-hat-display-latin-ext-400-normal.f38d30961842835c5747.woff2",
+    "index.html": "/WKorki/index.html",
+    "main.a8a92832.css.map": "/WKorki/static/css/main.a8a92832.css.map",
+    "main.97a0da07.js.map": "/WKorki/static/js/main.97a0da07.js.map",
+    "453.5b02ef8d.chunk.js.map": "/WKorki/static/js/453.5b02ef8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7250a539.css",
-    "static/js/main.c85cbe8d.js"
+    "static/css/main.a8a92832.css",
+    "static/js/main.97a0da07.js"
   ]
 }
